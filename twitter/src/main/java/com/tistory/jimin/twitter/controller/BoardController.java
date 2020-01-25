@@ -1,4 +1,4 @@
-package com.tistory.jimin.twitter.board;
+package com.tistory.jimin.twitter.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

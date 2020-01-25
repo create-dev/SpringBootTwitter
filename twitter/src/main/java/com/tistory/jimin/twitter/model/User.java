@@ -1,4 +1,4 @@
-package com.tistory.jimin.twitter.user;
+package com.tistory.jimin.twitter.model;
 
 import java.sql.Date;
 
@@ -7,40 +7,42 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-
 @Entity
 public class User {
 	
 	@Id
 	@GeneratedValue
-	private int user_no;
+	private int id;
 	
 	@Column(length=50, nullable=false)
 	private String email;
 	
-	@Column(length=30, nullable=false)
-	private String pw;
+	@Column(length=45, nullable=false)
+	private String password;
 	
-	
+	@Column(length=45, nullable=false)
+	private String nickname;
+
+
 	private char grade;
 	private int score;
 	private Date joinDate;
 	
 	
-	public User(String email, String pw, char grade, int score) {
+	public User(String email, String password, char grade, int score) {
 		super();
 		this.email = email;
-		this.pw = pw;
+		this.password = password;
 		this.grade = grade;
 		this.score = score;
 	}
 	
 	
-	public int getUser_no() {
-		return user_no;
+	public int getId() {
+		return id;
 	}
-	public void setUser_no(int user_no) {
-		this.user_no = user_no;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getEmail() {
 		return email;
@@ -48,11 +50,11 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPw() {
-		return pw;
+	public String getPassword() {
+		return password;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public char getGrade() {
 		return grade;

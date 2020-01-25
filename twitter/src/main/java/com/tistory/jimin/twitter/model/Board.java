@@ -1,4 +1,4 @@
-package com.tistory.jimin.twitter.board;
+package com.tistory.jimin.twitter.model;
 
 
 public class Board {

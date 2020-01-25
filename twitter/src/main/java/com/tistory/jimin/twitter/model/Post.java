@@ -1,4 +1,4 @@
-package com.tistory.jimin.twitter.post;
+package com.tistory.jimin.twitter.model;
 
 import java.sql.Date;
 

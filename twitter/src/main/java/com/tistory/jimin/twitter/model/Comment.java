@@ -1,6 +1,6 @@
-package com.tistory.jimin.twitter.reply;
+package com.tistory.jimin.twitter.model;
 
-public class Reply {
+public class Comment {
 	private int reply_no;
 	private String content;
 	private int post_no;
